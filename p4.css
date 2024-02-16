@@ -1,5 +1,5 @@
 :root {
-    --J1-couleur: #c74848;
+    --J1-couleur: #DC2626FF;
     --J2-couleur: #3b3b3b;
 }
 
@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: gray;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .anim::before {
@@ -21,14 +21,14 @@ body {
     box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     animation-duration: .8s;
-    background-color: gray;
+    background-color: white;
     animation-name: clignoter;
     animation-iteration-count: infinite;
     transition: none;
 }
 
 .w::before, .i::before, .n::before, .ex::before {
-    color: white;
+    color: black;
     display: flex;
     font-size: 40px;
     font-weight: bold;
@@ -116,9 +116,9 @@ table {
 .pion {
     width: 80px;
     height: 80px;
-    box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    background-color: gray;
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    background-color: white;
     cursor: pointer;
 }
 
@@ -149,19 +149,30 @@ p {
 
 .rejouer, .annuler {
     margin: 10px;
-    background-color: #6b9b59;
-    border-radius: 4px;
+    border-radius: 50px;
     border: none;
     height: 40px;
     width: 160px;
     padding: 8px;
     font-size: 20px;
     cursor: pointer;
+    color: #6e6e6e;
+    border: solid 2px #6e6e6e;
 }
 
 .annuler {
-    background-color: #5d599b;
+    color: #DC2626FF;
+    border: solid 2px #DC2626FF;
 }
+
+.rejouer:hover {
+    background-color: lightgray;
+}
+
+.annuler:hover {
+    background-color: white;
+}
+
 
 .formCouleur {
     font-size: 40px;
@@ -172,17 +183,22 @@ p {
 }
 
 .name {
-    margin-bottom: 120px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .formCouleur select, .jouer {
-    padding: 8px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 50px;
     border: none;
+    padding: 8px 16px 8px 16px;
     font-size: 24px;
-    width: 360px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.formCouleur select:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 label {
@@ -191,8 +207,12 @@ label {
 }
 
 .jouer {
-    margin-top: 16px;
-    background-color: #6b9b59;
+    margin-top: 32px;
+    background-color: #ffffff;
+}
+
+.jouer:hover {
+    color: #DC2626FF;
 }
 
 .selectJ1 {
@@ -201,4 +221,24 @@ label {
 
 .selectJ2 {
     background-color: var(--J2-couleur);
+}
+
+.github {
+    border: none;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+}
+
+.github:hover {
+    color: #DC2626FF;
 }

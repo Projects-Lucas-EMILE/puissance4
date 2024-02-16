@@ -71,7 +71,7 @@ export class Puissance4 {
         const couleurs = [
             {label: "Rouge", value: "#c74848"},
             {label: "Noir", value: "#3b3b3b"},
-            {label: "Blanc", value: "#ecececff"},
+            {label: "Blanc", value: "#e5e5e5"},
             {label: "Bleu", value: "#487bc7ff"},
             {label: "Jaune", value: "#ffd500"}
         ];
