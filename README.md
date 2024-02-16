@@ -11,6 +11,7 @@ Projet individuel consiste en la création d'un module JS Puissance 4.
 ## Aperçu
 
 L'objectif était de recréer un Puissance 4, dans un simple module JavaScript.
+Les screens ci-dessous montrent le projet tel qu'il était lorsque je l'ai créé pour le projet Epitech, il a depuis été légèrement modifier pour être plus cohérent avec mon portfolio.
 
 <img width="1470" alt="image" src="https://github.com/Projects-Lucas-EMILE/puissance4/assets/118727247/9d7f0bf8-7bae-4f1c-8f87-1c1e15edf19f">
 
